@@ -6,6 +6,9 @@
 
     <title>note</title>
 
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +30,12 @@
 </head>
 
 <body>
-<h1>日記</h1>
+    <!-- header -->
+    <header>
+        <h1>日記</h1>
+    </header>
+
+    <!-- main -->
     <h2>直近で使う項目</h2>
     <h3>院試</h3>
     <ul>
@@ -95,9 +103,32 @@
     </details>
     <h3>2026年7月</h3>
     <ul>
+        <li>31(木)：デザインを変えました．院試まで1ヶ月を切りました．最近不安なのは口頭試問です．PDEの先生6人(うち2人は面談済み)からどんな質問が来るのか．どの質問も基本的には緊張しますが，「$L^1$だが$L^2$でない例を挙げて」などという，いわゆる反例提示系の質問がきたら死んでしまいます．残りの日数で共通と選択を1年分やって，今までにやった問題の復習と周辺分野の知識整理に時間を割きたいと思います．多元数理をうけなかったことを少し気にかけている部分はありますが，受験してても今と同じ精神状態になっている感触はあるので，とにかく8/20,21の東北に専念します．</li>
         <li>22日(水)：大学院入試だいぶまずいですね．昔は名古屋の多元数理も受験予定だったのですが，やめて今は東北の理学研究科1本です．これに受かれば一応大学院生，落ちれば無職です．共通問題は2完，専門は1完答，が時間内でのボーダーな気がします．これに到達できないようであれば，精神的にだいぶ苦しい1日目の夜を過ごし，2日目の面積でもまあまあ苦労しそうということが想定されます．ちなみに最近は東北の問題をしばくことにだいぶ力を入れていて，黒田はたまにしか見れていないので，まずいかもしれません．</li>
         <li>10日(金)：18日(土)に福島大学でオープンキャンパスがあるので，それの現段階での準備結果を先生に見せました．順調だねーとまあまあご機嫌そうだったので，来週の水曜日あたりに印刷して，他のパネルもみて当日に備えたいと思います．</li>
     </ul>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer>
+        <p>© All rights reserved by S.S</p>
+        <script type="text/javascript">
+            var nowdate = new Date();
+            var modified = new Date(document.lastModified);
+            var year = modified.getFullYear();
+            var mon  = modified.getMonth() ;
+            var monchars = new Array( "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", );
+            var moneng = monchars[ mon ];
+            var date = modified.getDate();
+            var week = modified.getDay();
+            var weekchars = new Array( "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" );
+            var todayweek = weekchars[ week ];
+            var hour = modified.getHours();
+            var min  = modified.getMinutes();
+            var sec  = modified.getSeconds();
+            document.write("Last  modified: "+ todayweek + " " + moneng + " " + date + " " + hour + ":" + min + ":" + sec + " JST " + year);
+        </script>
+    </footer>
 
 </body>
 </html>
