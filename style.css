@@ -20,6 +20,18 @@ footer {
     background-color: whitesmoke;
 }
 
+/* a  */
+a{
+    color: blue;
+    text-decoration: none;
+} 
+a:visited{
+    color: blue;
+}  
+a:hover{
+    color: red;
+}
+
 /* =================================================
    スマホ用レイアウト
    ================================================= */
